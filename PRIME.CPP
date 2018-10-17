@@ -1,8 +1,8 @@
 
 #include<iostream>
+using namespace std;
 int main()
 {
-  system("cls");
  int a,s,d;
  cout<<"Enter number=";
  cin>>a;
@@ -10,7 +10,7 @@ int main()
  while(s<=a/2)
  {
   s++;
-  if(a%s==0)
+  if(a%s)
   {
     d=1;
     s=a;
@@ -18,9 +18,9 @@ int main()
   else
    d=0;
   }
-  if(d==0)
+  if(d)
   cout<<"\nnumber is prime";
   else
   cout<<"\nNot a prime number";
- system("pause");
+return 0;
 }
